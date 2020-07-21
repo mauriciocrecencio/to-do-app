@@ -2,10 +2,10 @@ import React from "react";
 
 const TodosList = (props) => {
   const { todoList } = props;
-  const filtered = todoList.filter((element) => element.completed === false);
+  const incompleteTodos = todoList.filter((element) => element.completed === false);
   return (
     <div>
-      <h5>{filtered.length <= 0 ? "Você não tem nenhuma tarefa pendente!" : "Tarefas a fazer"}</h5>
+      <h5>{incompleteTodos.length <= 0 ? "Você não tem nenhuma tarefa pendente!" : "Tarefas a fazer"}</h5>
 
       <ul>
         {
