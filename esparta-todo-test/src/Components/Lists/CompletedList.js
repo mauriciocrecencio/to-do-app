@@ -1,6 +1,5 @@
 import React from "react";
-const CompletedList = (props) => {
-  const { todoList } = props;
+const CompletedList = ({ todoList }) => {
   const completedTodos = todoList.filter((element) => element.completed === true);
 
   return (

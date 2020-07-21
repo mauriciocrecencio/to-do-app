@@ -8,7 +8,7 @@ import "./Main.css";
 const Lists = () => {
   const [input, setInput] = useState("");
   const [todoList, setTodoList] = useState([]);
-  const [page, setPage] = useState("/list");
+  const [page, setPage] = useState("/");
 
   const handleSubmit = (e) => {
     e.preventDefault();

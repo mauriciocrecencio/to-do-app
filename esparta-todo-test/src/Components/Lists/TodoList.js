@@ -1,7 +1,6 @@
 import React from "react";
 
-const TodosList = (props) => {
-  const { todoList } = props;
+const TodosList = ({ todoList }) => {
   const incompleteTodos = todoList.filter((element) => element.completed === false);
   return (
     <div>
